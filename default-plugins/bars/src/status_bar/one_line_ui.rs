@@ -1512,7 +1512,6 @@ fn get_keys_and_hints(mi: &ModeInfo) -> Vec<(String, String, Vec<KeyWithModifier
     }
 
     if mi.mode == IM::Pane { vec![
-        
         (s("New"), s("New"), single_action_key(&km, &[A::NewPane{direction: None, pane_name: None, start_suppressed: false}, TO_NORMAL])),
         (s("Fourify"), s("Fourify"), single_action_key(&km, &[
                 A::NewPane{direction: Some(Direction::Right), pane_name: None, start_suppressed: false},
