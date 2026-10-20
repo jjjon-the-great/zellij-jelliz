@@ -9,11 +9,11 @@
 // For a single session, "zellij options --keybinds-preset <name>" (and --keybinds-primary,
 // --keybinds-secondary, --keybinds-unlock) choose a preset without changing this file.
 //
-// keybinds preset="default" primary="Ctrl" secondary="Alt" {
-//     normal {
-//         bind "Alt y" { NewTab; }
-//     }
-// }
+keybinds preset="default" primary="Ctrl" secondary="Alt" {
+    pane {
+        bind "+" { NewPane "Right" ; NewPane "Down" ; MoveFocus "Left"; NewPane "Down"; }
+    }
+}
 
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
