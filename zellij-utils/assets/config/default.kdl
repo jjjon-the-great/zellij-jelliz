@@ -10,19 +10,8 @@
 // --keybinds-secondary, --keybinds-unlock) choose a preset without changing this file.
 //
 keybinds preset="default" primary="Ctrl" secondary="Alt" {
-    normal {
-        bind "Alt e" { NewPane; }
-    }
     pane {
-        bind "n" { NewPane; }
         bind "+" { NewPane "Right" ; NewPane "Down" ; MoveFocus "Left"; NewPane "Down"; }
-        bind "L" {  Run "bash" {
-                            direction "Right"
-                        }; 
-                    Run "bash" {
-                            direction "Down"
-                        }; 
-                }
     }
 }
 
